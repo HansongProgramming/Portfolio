@@ -1,0 +1,141 @@
+/* ------------- SIDE BUTTONS ------------------------ ------------ ------------ ------------ ------------  */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-right: 20px;
+  }
+#leftButton:hover{
+  color: rgb(255, 112, 148);
+  transform: translate(-5px);
+  transition: 0.75;
+}
+
+#rightButton:hover{
+  color: rgb(255, 112, 148);
+  transform: translate(5px);
+  transition: 0.75;
+}
+
+/* ---------------- TEXTS --=--------------------------- ------------ ------------ ------------ ------------ ------------  */
+      p{
+          color: azure;
+          font-family: 'Courier New';
+          font-size: 18px;
+          width: 50%;
+        }
+
+        label{
+          font-family: 'Courier New', Courier, monospace;
+          color: azure;
+        }
+
+        h1 {
+          color: rgb(255, 112, 148);
+        }
+
+        hr{
+        width:50%;
+        margin: 0 auto;
+        }
+
+/* ---------- PROGRESS BAR ---------------------- ------------ ------------ ------------ ------------ ------------ ------------  */
+    progress {
+        position: absolute;
+        left: 60%;
+        width: 500px;
+        height : 15px;
+        border: 1px solid #1f1f20;;
+        }
+    progress::-webkit-progress-bar {
+        background-color: #1f1f20;;
+        }
+    progress::-webkit-progress-value {
+        background-color: rgb(255, 112, 148);
+        }
+
+
+/* ---------- WINDOW SCROLL -------------------------- ------------ ------------ ------------ ------------ ------------ ------------ ------------  */
+#jobEx{
+    height: 100vh;
+    width: 100vw;
+    background-color: #131314;
+    margin: 0rem;
+    overflow: hidden;
+}
+
+/* ---------- THIS IS FOR THE SCROLL BAR ----------- ------------ ------------ ------------ ------------ ------------ ------------ ------------ ------------ */
+      .scrollbar{
+        margin-left: 3px;
+        float: left;
+        height: 150px;
+        width: 750px;
+        background: #131314;
+        overflow-y: scroll;
+        margin-bottom: 25px;
+      }
+
+      #style-4::-webkit-scrollbar-track{
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #343436;
+      }
+
+      #style-4::-webkit-scrollbar{
+        width: 10px;
+        background-color: rgb(255, 112, 148);
+      }
+
+      #style-4::-webkit-scrollbar-thumb{
+        background-color: rgb(255, 112, 148);
+        border: 2px solid #131314
+      }
+
+ /* ---------- HANSONG'S GENERAL SCREEN ---------------------- ------------ ------------ ------------ ------------ ------------ ------------ ------------ ------------  */
+      body{animation: screentransition 0.75s;}
+      @keyframes screentransition {
+        from{opacity: 0.2;} to{opacity: 1;}
+      }
+      .leftBlock{
+        justify-content: left;
+        position: absolute;
+        top: 35%;
+        left: 30%;
+    }
+
+/* ---------- CAMERA ICON ---------- ------------ ------------ ------------ ------------ ------------ ------------ ------------ ------------ ------------ ------------ */
+  #cameraIcon{
+    position: absolute;
+    left: 64.5%;
+    top: 45%;
+    width: 130px;
+    height: 85px;
+    animation: an infinite 2s;
+  }
+
+  @keyframes an {
+    0%{transform: rotate(0deg);}
+    30%{transform: rotate(15deg);}
+    60%{transform: rotate(-15deg);}
+    100%{transform: rotate(0deg);}
+
+  }
+
+/* -------- ORANGE SPINNNING ------------------------------------------------------------------------------------------------------------------------------------- */
+.ikot{
+  width: 100px;
+  height: 105px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(360deg);
+  }
+  
+}
